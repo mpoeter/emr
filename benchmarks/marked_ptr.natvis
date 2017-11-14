@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="emr::detail::marked_ptr&lt;*&gt;">
+    <Expand>
+      <Item Name="[mark]" ExcludeView="simple">(size_t)ptr &amp; MarkMask_</Item>
+      <Item Name="[ptr]" ExcludeView="simple">(PtrType)(void*)((size_t)ptr &amp; ~MarkMask_)</Item>
+    </Expand>
+  </Type>
+</AutoVisualizer>
