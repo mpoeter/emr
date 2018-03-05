@@ -13,6 +13,7 @@
 #include <emr/epoch_based.hpp>
 #include <emr/new_epoch_based.hpp>
 #include <emr/quiescent_state_based.hpp>
+#include <emr/debra.hpp>
 #include <emr/stamp_it.hpp>
 
 #include <boost/program_options.hpp>
@@ -55,7 +56,8 @@ auto make_benchmark_variations()
     { "EBR",  benchmark_builder<Benchmark, emr::epoch_based<100>>() },
     { "NEBR", benchmark_builder<Benchmark, emr::new_epoch_based<100>>() },
     { "QSBR", benchmark_builder<Benchmark, emr::quiescent_state_based>() },
-    { "stamp", benchmark_builder<Benchmark, emr::stamp_it>() }
+    { "stamp", benchmark_builder<Benchmark, emr::stamp_it>() },
+    { "DEBRA", benchmark_builder<Benchmark, emr::debra<20>>() }
   };
 }
 

@@ -26,6 +26,8 @@ set(EMR_FILES
         include/emr/detail/port.hpp
         include/emr/detail/thread_block_list.hpp
         include/emr/acquire_guard.hpp
+        include/emr/debra.hpp
+        include/emr/debra_impl.hpp
         include/emr/dummy.hpp
         include/emr/epoch_based.hpp
         include/emr/epoch_based_impl.hpp
@@ -71,7 +73,8 @@ set(TEST_FILES
         test/new_epoch_based_test.cpp
         test/queue_test.cpp
         test/quiescent_state_based_test.cpp
-        test/stamp_it_test.cpp)
+        test/stamp_it_test.cpp
+        test/debra_test.cpp)
 
 include_directories(include)
 include_directories(${Boost_INCLUDE_DIR})
