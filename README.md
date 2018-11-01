@@ -1,3 +1,6 @@
+**I have started a new project based on this work: https://github.com/mpoeter/xenium  
+All further development is done there!**
+
 # Effective Memory Reclamation
 This repository contains the C++ implementations of various
 lock-free reclamation schemes that I have implemented in
